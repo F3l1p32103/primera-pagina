@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/donaciones/2styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500,700&display=swap" rel="stylesheet">
+    <title>Solin Inc | Donaciones </title>
+</head>
+
+<body>
+
+    <!-- Ir Arriba -->
+    <div class="go-top">
+        <span class="fas fa-angle-up"></span>
+    </div>
+
+    <!-- Menu de Navegacion -->
+    <header id="header">
+        <nav class="menu">
+            <div class="logo-box">
+                <h1><a href="#">Solin solito</a></h1>
+                <span class="btn-menu"><i class="fas fa-bars"></i></span>
+            </div>
+
+            <div class="list-container">
+                <ul class="lists">
+                    <li><a href="index.php">Inicio</a></li>
+                    <li><a href="donaciones.html" class="active">Donaciones</a></li>
+                    <li><a href="login-register.php">Login - Register</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <video autoplay muted loop id="mivideo">
+        <source src="./assets/donaciones/img/relax.mp4" type="video/mp4">
+    </video>
+
+
+        <div class="contenido">
+            <section class="contenedor sobre-nosotros">
+                <h2 class="titulo">Mas informacion acerca de nosotros</h2>
+                <div class="contenedor-sobre-nosotros">
+                    <img src="./assets/donaciones/img/illustration2.webp" alt="" class="imagen-about-us">
+                    <div class="contenedor-textos">
+                        <h3><span>1</span> Nuestra mision</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus incidunt nobis provident inventore eaque quis natus, quod error mollitia est!</p>
+                        <h3><span>2</span> Nuestra vision</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus incidunt nobis provident inventore eaque quis natus, quod error mollitia est!</p>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+
+            <!-- Donation Form START -->
+            <div class="paypal-form" id="donar">
+                <div class="paypal-header">
+                    <h4 class="header-text">Donar via Paypal</h4>
+                    <img src="https://neculaifantanaru.com/paypal.png" alt="Alternate Text" />
+                </div>
+                <!-- Identify your business so that you can collect the payments. -->
+                <div class="paypal-body">
+                    <div class="col">
+                        <div class="body-text">
+                            <h4>DONACION RECURRENTE</h4>
+                            <p>Done mensualmente para apoyar <br>el proyecto solin solito</p>
+                        </div>
+                        <div class="paypal-content">
+                            <!-- PayPal DONATION BUTTON WITH COMBO BOX. -->
+
+                            <form action="" method="post" class="den_webinar">
+
+                                <!-- Identify your business so that you can collect the payments. -->
+                                <input type="hidden" name="business" value="ioan.fantanaru@gmail.com">
+
+                                <!-- Specify a Donate button. -->
+                                <input type="hidden" name="cmd" value="_donations">
+
+                                <!-- Specify details about the contribution -->
+                                <input type="hidden" name="item_name" value="Donation">
+                                <input type="hidden" name="item_number" value="Donation">
+                                <select name="amount"><option value="3.00">&euro;3.00</option><option value="5.00">&euro;5.00</option><option value="10.00">&euro;10.00</option><option value="25.00">&euro;25.00</option><option value="50.00">&euro;50.00</option></select>
+                                <input type="hidden" name="currency_code" value="EUR">
+
+                                <!-- Display the payment button. -->
+                                <input class="paypal-img" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" style="border: 20em;" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                            </form>
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="body-text">
+                            <h4>DONACION UNICA</h4>
+                            <p>Done la cantidad deseada para apoyar <br>el proyecto solin solito</p>
+                        </div>
+                        <div class="paypal-content">
+                            <form action="" method="post" target="_top">
+                                <input type="hidden" name="hosted_button_id" value="77FLYC2Z7JBUL" />
+                                <input class="paypal-img" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" style="border: 20em;" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="paypal-contact">
+                <h4>Donar por transferencia bancaria</h4>
+                <p>
+                    <span>Cuenta Ron: </span> RO34INGB0000999900448439
+                </p>
+                <div class="text-muted">
+                    Open account at ING Bank
+                </div>
+            </div>
+
+            <!-- Donation Form Finnish -->
+        </div>
+
+        <script src="https://kit.fontawesome.com/35db202371.js"></script>
+        <script src="./assets/donaciones/js/app.js"></script>
+</body>
+
+</html>
